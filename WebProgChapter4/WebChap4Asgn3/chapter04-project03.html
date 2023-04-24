@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Art Store</title>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="chapter04-project03.css" />
+   <!-- Include Swiper CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+   <!-- Include Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+
+<body>
+   <header>
+      <h1>Art Store</h1>
+      <h2>Life imitates art</h2>
+   </header>
+   <div class="swiper-container">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide"><img src="images/pic1.jpg"></div>
+         <div class="swiper-slide"><img src="images/pic2.jpg"></div>
+         <div class="swiper-slide"><img src="images/pic3.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+   </div>
+   <script>
+      var mySwiper = new Swiper('.swiper-container', {
+         autoplay: {
+            delay: 5000,
+         },
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+         },
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+         },
+      });
+   </script>
+   <main>
+      <h2>Abstract Expressionism Exhibit</h2>
+      <p id="announcement">The exhibit will start in</p>
+      <iframe
+         src="https://free.timeanddate.com/countdown/i8ruhugl/n2147/cf101/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcd8873c/tc66c/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2023-03-25T19:00:00"
+         allowtransparency="true" frameborder="0" width="320" height="135"></iframe>
+      <p id="timeline">Saturday, March 25, 2023. 7:00PM. Scranton<sup>*</sup></p>
+      <p id="footnote"><sup>*</sup>FREE ADMISSIONS</p>
+   </main>
+
+
+   <footer>
+      <h2>Recent Acquisitions</h2>
+      <div>
+         <img class="zoom" src="images/pic1.jpg" alt="Liberty Leading the People">
+         <img class="zoom" src="images/pic2.jpg" alt="The Death of Marat">
+         <img class="zoom" src="images/pic3.jpg" alt="Girl with a Pearl Earring">
+      </div>
+   </footer>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>World's Wonders</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="js/data.js" type="text/JavaScript"></script>
+  <script src="js/functions.js" type="text/JavaScript"></script>
+  <script src="js/chapter08-project01.js" type="text/JavaScript"></script>
+  <!-- add the icon -->
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-danger" id="headerNav">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="#">
+          <img src="images/—Pngtree—green-purple wonderful smoke abstract frame_3780313.png" height="60" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active fs-4" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 fs-4" href="#">Products</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link mx-2" href="#">
+                <img src="images/logo.png" height="60" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 fs-4" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container p-3">
+      <div class="table-responsive">
+
+        <h2>View Cart</h2>
+
+        <table class="table table-bordered table-striped caption-top">
+          <thead class="table-dark">
+            <tr>
+              <th>Image</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider align-middle">
+            <script type="text/javascript">
+              outputCartRows();
+            </script>
+          </tbody>
+          <tr class="table-warning"">
+            <td colspan=" 4" class="text-end">Subtotal</td>
+            <td>
+              <script type="text/javascript">outputSubtotal()</script>
+            </td>
+          </tr>
+          <tr class="table-warning"">
+            <td colspan=" 4" class="text-end">Tax</td>
+            <td>
+              <script type="text/javascript">outputTax()</script>
+            </td>
+          </tr>
+          <tr class="table-warning"">
+            <td colspan=" 4" class="text-end">Shipping</td>
+            <td>
+              <script type="text/javascript">outputShipping()</script>
+            </td>
+          </tr>
+          <tr class="table-warning"">
+            <td colspan=" 4" class="text-end">Grand Total</td>
+            <td>
+              <script type="text/javascript">outputGrandTotal()</script>
+            </td>
+          </tr>
+          <tfoot class="table-borderless">
+            <tr>
+              <td colspan="4" class="text-end">
+                <button type="button" class="btn btn-primary">Continue Shopping</button>
+              </td>
+              <td>
+                <!-- Modal trigger button -->
+                <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                  Checkout
+                </button>
+                <!-- Modal Body -->
+                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                  role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Enter your card details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                          <label for="ccnumber">Credit Card Number</label>
+                          <div class="input-group">
+                            <input class="form-control" type="text" placeholder="0000 0000 0000 0000"
+                              autocomplete="email">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Finalize</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+    </div> <!-- end container -->
+  </main>
+
+  <footer class="bg-dark text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div
+            class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+            style="width: 150px; height: 150px;">
+            <img src="images/logo.png" height="70" alt="logo"
+              loading="lazy" />
+          </div>
+
+          <p class="text-center">World's Wonders Art Store</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">FAQ</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Collection Tours</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently Added</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to submit your work?</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Send as Gifts</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Museum Visits</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Company</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>General Information</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About Us</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Statistic Data</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Job</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Artists</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2"></i>57 Street, Ashley</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>(123) 456 - 7890</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

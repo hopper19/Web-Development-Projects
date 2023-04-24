@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Sample Art Store</title>
+  <style>
+    header,
+    footer {
+      color: white;
+      background-color: #1A237E;
+    }
+
+    .zoom {
+      transition: transform .5s;
+    }
+
+    .zoom:hover {
+      transform: scale(1.2);
+    }
+  </style>
+  <link rel="icon" type="image/jpg" sizes="32x32" href="/art-icon.jpg">
+</head>
+
+<body style="font-family: sans-serif;
+			margin: 0em 10vw 0vh 10vw;
+			background-image: url('images/art-background.gif');
+			background-attachment: fixed;
+			background-size: 100% 100%;">
+  <header>
+    <h1 style="font-family: Brush Script MT, cursive; font-size:60px; padding-top: 0.5em; padding-left:0.5em">My Sample
+      Art Store</h1>
+    <nav style=" background-color: #3F51B5; padding: 0.5em">
+      <a href="#" style="color: #00B0FF; padding-left:1em; padding-right: 0.5em;">Home</a> | <a href="#"
+        style="color: #00B0FF;padding: 0.5em;">Artists</a> | <a href="#"
+        style="color: #00B0FF;padding: 0.5em;">Artworks</a> | <a href="#" style="color: #00B0FF;padding: 0.5em;">About
+        Us</a> | <a href="#" style="color: #00B0FF;padding: 0.5em;">Search</a>
+    </nav>
+  </header>
+  <main style="background-color: #ffffff; padding: 1em; display: flex">
+    <div style="margin-right: 1em">
+      <section>
+        <h2>Mademoiselle Caroline Rivi&egrave;re</h2>
+        <p>by <a href="https://en.wikipedia.org/wiki/Jean-Auguste-Dominique_Ingres">Jean-Auguste-Dominique Ingres</a>
+        </p>
+        <figure>
+          <a href="images/06010-large.jpg"><img class="zoom" src="images/06010-medium.jpg"
+              alt="Mademoiselle Caroline Rivi&egrave;re" title="Mademoiselle Caroline Rivi&egrave;re"></a>
+        </figure>
+        <p> The portrait of Mademoiselle Caroline Rivi&egrave;re was painted in 1806 by the French Neoclassical artist
+          Jean Auguste Dominique Ingres, and today hangs in the Louvre. It is the third of three portraits of the
+          Rivi&egrave;re family the artist painted that year.</p>
+        <p>
+          Date: <em>1806</em> <br>
+          Medium: <em>Oil on canvas</em> <br>
+          Dimensions: <em>100 x 70 cm</em> <br>
+          Home: <em>Mus&eacute;e du Louvre, Paris</em>
+        </p>
+        <a href="#"><img src="images/cart.png" alt="Cart" title="Cart"></a>
+        <a href="#">Add to Cart</a>
+        <a href="#"><img src="images/favorites.png" alt="Favorites" title="Favorites"></a>
+        <a href="#">Add to Favorites</a>
+      </section>
+
+      <section>
+        <h3>Reviews</h3>
+        <p><strong>Love this painting</strong><br>
+          John Smith <img src="images/star-orange.png" alt="Star" title="Star"><img src="images/star-orange.png"
+            alt="Star" title="Star"><img src="images/star-orange.png" alt="Star" title="Star"><img
+            src="images/star-orange.png" alt="Star" title="Star"><img src="images/star-white.png" alt="Blank Star"
+            title="Blank Star"></p>
+        <p><small>This is one of my favorites!</small></p>
+        <hr>
+      </section>
+    </div>
+
+    <section style="flex:25%">
+      <h3>Related Paintings</h3>
+      <img src="images/05030.jpg" alt="Related Painting 1" title="Related Painting 1">
+      <img src="images/06020.jpg" alt="Related Painting 2" title="Related Painting 2">
+      <img src="images/07020.jpg" alt="Related Painting 3" title="Related Painting 3">
+      <img src="images/13030.jpg" alt="Related Painting 4" title="Related Painting 4">
+    </section>
+  </main>
+  <footer style="padding: 1em">
+    <nav><a href="#" style="color: #00B0FF; padding: 0.5em;">Home</a> | <a href="#"
+        style="color: #00B0FF;padding: 0.5em;">Artists</a> | <a href="#"
+        style="color: #00B0FF;padding: 0.5em;">Artworks</a> |
+      <a href="#" style="color: #00B0FF;padding: 0.5em;">About Us</a> | <a href="#"
+        style="color: #00B0FF;padding: 0.5em;">Search</a>
+    </nav>
+    <p><em>Copyright &copy; 2017 My Sample Art Store</em></p>
+  </footer>
+</body>
+
+</html>

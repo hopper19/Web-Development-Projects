@@ -1,0 +1,170 @@
+header
+{
+  font-family: sans-serif;
+  color: white;
+  background-color: #1A237E;
+}
+
+header h1 {
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-top: 0.7em;
+}
+
+header p {
+  font-family: serif;
+  margin-right: 1.1em;
+  margin-left: 1.1em;
+  margin-bottom: 1.1em;
+  font-style: italic;
+}
+
+footer {
+  color: white;
+  background-color: #1A237E;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+  padding-top: 1.2em;
+  padding-bottom: 1.0em;
+}
+
+footer p {
+  margin-bottom: 0.7em;
+}
+
+footer a {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: serif;
+  font-size: 100%;
+  background-color: #E8EAF6;
+  margin: 0em 5vw 4vh 5vw;
+  background-image: url('images/travel-background.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body h1, h2, h3 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.zoom {
+  transition: transform .5s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+main h1, h2, h3
+{
+  font-family: sans-serif;
+  background-color: #7986CB;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-top: 1.0em;
+  padding-bottom: 1.0em;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 0.9em;
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
+}
+
+section {
+  margin-bottom: 0.7em;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  max-width: 2000px;
+}
+
+figcaption
+{
+  color: #728B96;
+  font-style: italic;
+  background-color: #C5CAE9;
+  padding: 0.7em;
+}
+
+/* Style for the div */
+div {
+  border: solid thin #C5CAE9;
+}
+
+div p {
+  padding: 0.7em;
+}
+
+article img {
+  width: 20%;
+  height: auto;
+  max-width: 1000px;
+}
+
+/* Style for the link */
+a:link
+{
+  color: #00B0FF;
+}
+a:hover {
+  background-color: #F50057;
+  color: white;
+}
+
+/* Style for the navigation bar */
+nav
+{
+  background-color: #3F51B5;
+}
+nav ul {
+  padding: 0.5em;
+}
+nav ul li
+{
+  list-style: none;
+  display: inline;
+}
+nav a
+{
+  padding: 0.5em;
+}
+
+.byline {
+  font-style: italic;
+  color: #7986CB;
+}
+
+.byline time {
+  color: #FF80AB;
+}
+
+.like-dislike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-btn, .dislike-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-btn:hover, .dislike-btn:hover {
+  background-color: #ccc;
+}
+
+

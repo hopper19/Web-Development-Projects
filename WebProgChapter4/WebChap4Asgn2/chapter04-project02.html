@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>CRM</title>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="chapter04-project02.css" />
+   <link rel="icon" type="image/ico" sizes="32x32" href="/crm.ico">
+</head>
+
+<body>
+   <header>
+      <nav id="mainMenu">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="books.html">Inventory</a></li>
+         </ul>
+      </nav>
+      <h1><span>CRM</span> Admin</h1>
+
+      <nav id="secondaryMenu">
+         <ul>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Evaluation Copies</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <article id="mainContact">
+
+      <div>
+         <img class="zoom" src="images/profile-96x96.jpg" alt="Portrait" />
+         <h2>Jack Smith</h2>
+      </div>
+
+      <section>
+         <h3>Personal Details</h3>
+         <div class="personal-details">
+            <h2>Personal Details</h2>
+            <em>Address:</em>
+            <p id="address">1 Microsoft Way</p>
+            <em>City:</em>
+            <p id="city">Redmond</p>
+            <em>Region:</em>
+            <p id="region">WA</p>
+            <em>Country:</em>
+            <p id="country">USA</p>
+            <em>Postal:</em>
+            <p id="postal">98052-8300</p>
+            <button id="edit-btn" onclick="editFunction()">Edit</button>
+         </div>
+         <script src="detail-edit.js"></script>
+
+         <div class="edit-form" style="display: none;">
+            <h2>Edit Personal Details</h2>
+            <form>
+               <label for="address">Address:</label>
+               <input type="text" id="address-input" name="address"><br>
+
+               <label for="city">City:</label>
+               <input type="text" id="city-input" name="city"><br>
+
+               <label for="region">Region:</label>
+               <input type="text" id="region-input" name="region"><br>
+
+               <label for="country">Country:</label>
+               <input type="text" id="country-input" name="country"><br>
+
+               <label for="postal">Postal:</label>
+               <input type="text" id="postal-input" name="postal"><br>
+
+               <button type="submit" onclick="submitFunction()">Submit</button>
+               <button type="button" onclick="cancelFunction()">Cancel</button>
+            </form>
+         </div>
+
+      </section>
+
+      <section>
+         <h3>Contact</h3>
+         <p>
+            <em>Phone:</em> <a href="tel:+14258828080">+1 (425) 882-8080</a><br />
+            <em>Email:</em> <a href="mailto:jacksmith@microsoft.com">jacksmith@microsoft.com</a>
+         </p>
+         <div class="actions">
+            <ul>
+               <li><a href="#" class="actionEdit">Edit</a></li>
+               <li><a href="#" class="actionFlag">Flag</a></li>
+            </ul>
+         </div>
+      </section>
+
+      <section>
+         <h3>Sales Activity</h3>
+         <figure>
+            <img class="zoom" src="images/chart.jpg" alt="chart" title="sales chart" />
+         </figure>
+
+      </section>
+   </article>
+
+   <footer>
+      <p><a href="#">Home</a> | <a href="#">Catalog</a> | <a href="#">Inventory</a></p>
+      <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+   </footer>
+
+
+</body>
+
+</html>

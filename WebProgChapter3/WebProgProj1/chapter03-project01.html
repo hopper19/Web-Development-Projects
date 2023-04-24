@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Share Your Travels</title>
+	<style>
+		header,
+		footer {
+			color: white;
+			background-color: #1A237E;
+			padding-top: 0.1em;
+			padding-left: 2em;
+			padding-right: 2em;
+			padding-bottom: 0.1em;
+		}
+
+		.zoom {
+			transition: transform .5s;
+		}
+
+		.zoom:hover {
+			transform: scale(1.2);
+		}
+	</style>
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+
+<body style="font-family: sans-serif;
+			margin: 0em 10vw 0vh 10vw;
+			background-image: url('images/travel-background.jpg');
+			background-attachment: fixed;
+			background-size: 100% 100%;">
+	<header>
+		<h1 style="font-size:60px;"><img src="images/logo.png" alt="Logo" title="Logo" width="50" height="50"> Share Your
+			Travel</h1>
+	</header>
+	<main style="background-color: #ffffff; padding: 0.9em;">
+		<aside>
+			<nav>
+				<!-- Make an unordered list with links to each of the <h2> headings section -->
+				<ul>
+					<li><a href="#newyork">New York</a></li>
+					<li><a href="#Vietnam">Vietnam</a></li>
+					<li><a href="#photos">Related Photos</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<hr>
+			<article id="newyork">
+				<h2>New York - Central Park</h2>
+				<p>According to Wikipedia:</p>
+				<blockquote cite="https://en.wikipedia.org/wiki/Central_Park#Cultural_significance">
+					Because of its cultural and historical significance, Central Park has been a National Historic Landmark since
+					1962, and a New York City designated scenic landmark since 1974. It was placed on UNESCO's list of
+					tentative World Heritage Sites in 2017.
+				</blockquote>
+				<p>This photo of Conservatory Pond in
+					<a href="https://www.centralpark.com/">Central Park</a> in
+					<a href="https://www.nyc.gov/">New York City</a> was
+					taken on October 22, 2016 with a Canon EOS 30D camera by Randy Connolly.
+				</p>
+				<center>
+					<figure>
+						<a href="images/large-central-park.jpg"><img src="images/central-park.jpg" alt="Central Park"
+								title="Central Park" class="zoom"></a>
+						<figcaption><em>Conservatory Pond in Central Park</em></figcaption>
+					</figure>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!4v1677704710100!6m8!1m7!1sCAoSLEFGMVFpcE8xRzVUc2FzRzRiU21IbDVLZjl3TU1OVVZXM1FFWFZ0VGZvVXgy!2m2!1d40.7812199!2d-73.9665138!3f257.489023311047!4f-13.871031285029588!5f0.7820865974627469"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+					<p><em>Google Maps 360&#176; View of Central Park</em></p>
+				</center>
+				Options:
+				<a href="images/large-central-park.jpg" download="large-central-park"><img src="images/icon_download.png"
+						alt="Download" title="Download"></a>
+				<a href="mailto:john.kaufman@scranton.edu"><img src="images/icon_mail.png" alt="Email" title="Email"></a>
+				<a href="https://goo.gl/maps/4sd49amwsk5aiyeeA"><img src="images/icon_map.png" alt="Map" title="Map"></a>
+				<button type="button"><img src="images/icon_up.png" alt="Like" title="Like"></button>
+				<button type="button"><img src="images/icon_down.png" alt="Dislike" title="Dislike"></button>
+			</article>
+			<hr>
+			<article id="Vietnam">
+				<h2>Vietnam</h2>
+				<p>According to the UNESCO (United Nations Educational, Scientific and Cultural Organization):</p>
+				<blockquote cite="https://whc.unesco.org/en/list/672/">
+					Ha Long Bay, in the Gulf of Tonkin, includes some 1,600 islands and islets, forming a spectacular seascape of
+					limestone
+					pillars. Because of their precipitous nature, most of the islands are uninhabited and unaffected by a human
+					presence.
+					The site's outstanding scenic beauty is complemented by its great biological interest.
+				</blockquote>
+				<center>
+					<figure>
+						<a href="images/large-vietnam.jpg"><img width="560" height="315" src="images/vietnam.jpg" alt="Vietnam"
+								title="Vietnam" class="zoom"></a>
+						<figcaption><em>Ha Long Bay</em></figcaption>
+					</figure>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SpOWgms2uto" title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen>
+					</iframe>
+					<p><em>A National Geographic Segment on Ha Long Bay</em></p>
+				</center>
+				Options:
+				<a href="images/large-vietnam.jpg" download="large-vietnam"><img src="images/icon_download.png" alt="Download"
+						title="Download"></a>
+				<a href="mailto:john.kaufman@scranton.edu"><img src="images/icon_mail.png" alt="Email" title="Email"></a>
+				<a href="https://goo.gl/maps/iGhpXx3rMhvneEL36"><img src="images/icon_map.png" alt="Map" title="Map"></a>
+				<button type="button"><img src="images/icon_up.png" alt="Like" title="Like"></button>
+				<button type="button"><img src="images/icon_down.png" alt="Dislike" title="Dislike"></button>
+			</article>
+		<hr>
+		<!-- Add a section with a heading for Related Photos -->
+		<aside>
+			<h3 id="photos">Related Photos</h3>
+			<!-- Add three photos on the same row next to each other -->
+			<div style="overflow: auto;	white-space: nowrap;">
+				<a href="images/related-large1.jpg"><img src="images/related-square1.jpg" alt="Related Photo 1"
+						title="Related Photo 1"></a>
+				<a href="images/related-large2.jpg"><img src="images/related-square2.jpg" alt="Related Photo 2"
+						title="Related Photo 2"></a>
+				<a href="images/related-large3.jpg"><img src="images/related-square3.jpg" alt="Related Photo 3"
+						title="Related Photo 3"></a>
+				<a href="images/beach.jpg"><img src="images/beach.jpg" alt="Related Photo 4" title="Related Photo 4"
+						height="150" width="auto"></a>
+				<a href="images/pyramid.jpg"><img src="images/pyramid.jpg" alt="Related Photo 5" title="Related Photo 5"
+						height="150" width="auto"></a>
+				<a href=" images/thailand.jpg"><img src="images/thailand.jpg" alt="Related Photo 6" title="Related Photo 6"
+						height="150" width="auto"></a>
+				<a href="images/field.jpg"><img src="images/field.jpg" alt="Related Photo 7" title="Related Photo 7"
+						height="150" width="auto"></a>
+			</div>
+		</aside>
+
+		<section>
+			<h2 id="reviews">Reviews</h2>
+			<article>
+				<h4><img src="images/icon_comment.png" alt="Comment" title="Comment"> Ricardo on
+					<time>2016-05-23</time>
+				</h4>
+				<p>Easy on the HDR buddy.</p>
+			</article>
+			<hr>
+			<article>
+				<h4><img src="images/icon_comment.png" alt="Comment" title="Comment"> Cuong on
+					<time>2022-02-16</time>
+				</h4>
+				<p>Great shots!</p>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p><a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a></p>
+		<p><em>Copyright &copy; 2017 Share Your Travels</em></p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>CRM Admin</title>
+   <style>
+      header,
+      footer {
+         color: white;
+         background-color: #1A237E;
+      }
+
+      .zoom {
+         transition: transform .5s;
+      }
+
+      .zoom:hover {
+         transform: scale(1.2);
+      }
+
+      nav ul li {
+         list-style: none;
+         display: inline;
+      }
+   </style>
+   <link rel="icon" type="image/ico" sizes="32x32" href="/crm.ico">
+</head>
+
+<body style="font-family: sans-serif;
+			margin: 0em 10vw 0vh 10vw;
+			background-image: url('images/business-background.jpg');
+			background-attachment: fixed;
+			background-size: 100% 100%;">
+   <header>
+      <h2 style="font-size:60px;
+      padding-top: 1em;
+      padding-left:0.5em;
+      padding-right: 0.5em;">CRM Admin</h2>
+      <nav style=" background-color: #3F51B5;">
+         <ul style=" padding: 0.5em;">
+               <li><a href="#" style="color: #00B0FF;padding: 0.5em;">Contacts</a></li>
+               <li><a href="#" style="color: #00B0FF;padding: 0.5em;">Orders</a></li>
+               <li><a href="#" style="color: #00B0FF;padding: 0.5em;">Tasks</a></li>
+               <li><a href="#" style="color: #00B0FF;padding: 0.5em;">Evaluation Copies</a></li>
+         </ul>
+      </nav>
+   </header>
+   <div id="container" style="  display: grid;
+  grid-template-columns: auto 25%;
+  grid-column-gap: 30px;background-color: #ffffff; padding: 0.9em;">
+      <main>
+         <h1>Employee Profile</h1>
+         <section id="photo">
+            <h2>Photo</h2>
+            <figure>
+               <img class="zoom" src="images/profile.jpg" title="Jack Smith photo" alt="Jack Smith photo">
+               <figcaption>
+                  <p>Jack Smith</p>
+               </figcaption>
+            </figure>
+         </section>
+         <section id="personal">
+            <h2>Personal Data</h2>
+            <dl>
+               <dt>Address</dt>
+               <dd>1 Microsoft Way</dd>
+               <dt>City</dt>
+               <dd>Redmond</dd>
+               <dt>Region</dt>
+               <dd>WA</dd>
+               <dt>Phone</dt>
+               <dd>+1 (425) 882-8080</dd>
+               <dt>Email</dt>
+               <dd><a href="mailto:cuong.nguyen@scranton.edu">jack.smith@mail.com</a>
+            </dl>
+         </section>
+         <section id="customers">
+            <h2>Customers</h2>
+            <p><a href="#">Camille Bernard</a><br>University of Paris</p>
+            <p><a href="#">Michel Foucault </a><br>University of Paris</p>
+         </section>
+         <details style="
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;">
+            <summary style="font-weight: bold; font-size: 22px">Sales</summary>
+            <img src="images/chart.jpg" alt="Sales Chart" width="100%" height="auto">
+         </details>
+      </main>
+      <aside style="float: right;">
+         <h3>New Inventory</h3>
+         <article style="display:flex">
+            <img src="images/book1.jpg" alt="book1" style="flex: 50%;">
+            <p style="flex: 50%;"><em>Database Processing</em> by Kroenke, Auer</p>
+         </article>
+         <article style="display:flex">
+            <img src="images/book2.jpg" alt="book2" style="flex: 50%;">
+            <p style="flex: 50%;"><em>Fundamentals of Web Development</em> by Connolly, Hoar</p>
+         </article>
+         <article style="display:flex">
+            <img src="images/book3.jpg" alt="book3" style="flex: 50%;">
+            <p style="flex: 50%;"><em>Basics of Web Design: HTML5 & CSS3</em> by Felke-Morris</p>
+         </article>
+      </aside>
+   </div>
+   <footer style="
+      padding-top: 0.5em;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 0.5em;
+      margin-top: 1em">
+      <p><a href="#" style="color: #00B0FF;padding-right: 0.5em;">Home</a> | <a href="#"
+            style="color: #00B0FF;padding: 0.5em;">Catalog</a> | <a href="#"
+            style="color: #00B0FF;padding: 0.5em;">Inventory</a></p>
+      <p> <small><em>Copyright &copy; 2017 CRM Admin</em></small>
+      </p>
+   </footer>
+</body>
+
+</html>
