@@ -45,6 +45,7 @@
   </p>
   <p style="float:right">The current time is
     <?php echo $current_time; ?>
+  </p>
 
   
 
